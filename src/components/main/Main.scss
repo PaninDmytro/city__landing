@@ -1,0 +1,491 @@
+@import '../../utils/variables.scss';
+@import '../../utils/reset.scss';
+@import '../../styles/blocks/mixin.scss';
+
+.main {
+  padding: 80px 20px;
+
+  @include onTablet {
+    padding: 120px 40px;
+  }
+
+  @include onDesctop {
+    padding: 140px 120px;
+  }
+}
+
+.instruction {
+  max-width: 1202px;
+  margin: auto;
+
+  @include onDesctop {
+    padding-right: 102px;
+  }
+}
+
+.get__started {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #333333;
+  margin-bottom: 40px;
+
+  @include onTablet {
+    font-size: 56px;
+    line-height: 66px;
+    margin-bottom: 56px;
+    width: 419px;
+  }
+
+  @include onDesctop {
+    margin-bottom: 68px;
+  }
+}
+
+.fast {
+  background-color: rgba(79, 98, 246, 0.1);
+}
+
+.steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include pageGrid;
+  row-gap: 24px;
+  margin-bottom: 80px;
+
+  @include onTablet {
+    display: grid;
+    margin-bottom: 340px;
+  }
+
+  @include onDesctop {
+    margin-bottom: 320px;
+  }
+}
+
+.step {
+  position: relative;
+  border-radius: 30px;
+  border: 2px solid #4F62F6;
+  padding: 24px;
+  z-index: 20;
+
+  &--2 {
+    position: relative;
+    @include onTablet {
+      top: 190px;
+    }
+
+    @include onDesctop {
+      top: 180px;
+    }
+  }
+
+  &--4 {
+    @include onTablet {
+      position: relative;
+      top: 190px;
+    }
+
+    @include onDesctop {
+      position: relative;
+      top: 197px;
+    }
+  }
+
+  @include onTablet {
+    padding: 32px;
+    margin: 0;
+  }
+
+  @include onDesctop {
+    padding: 32px;
+  }
+}
+
+.number {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4F62F6;
+  margin-bottom: 8px;
+}
+
+.action {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4F4F4F;
+  margin-bottom: 24px;
+}
+
+.discribe {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.dashed__connect__rigth {
+  border-right: 3px dashed #6248FF;
+  border-top: 3px dashed #6248FF;
+  
+  border-top-right-radius: 30px;
+
+  @include onTablet {
+    height: 16%;
+    width: calc(30px + 50%);
+  }
+
+  @media (min-width: 915px) {
+    height: 30%;
+  }
+
+  @include onDesctop {
+    height: 34%;
+    width: calc(50% + 132px);
+  }
+
+  &--1 {
+    @include onTablet {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+    }
+
+    @include onDesctop {
+      position: absolute;
+      top: 100px;
+    }
+  }
+
+  &--2 {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+  }
+}
+
+.dashed__connect__left {
+  border-left: 3px dashed #6248FF;
+  border-top: 3px dashed #6248FF;
+  width: calc(50% + 30px);
+  height: 24%;
+  border-top-left-radius: 30px;
+
+  @include onDesctop {
+    height: 30%;
+    width: calc(50% + 132px);
+  }
+
+  &--1 {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+  }
+}
+
+.story {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 80px;
+  
+  @include onTablet {
+    margin-bottom: 120px;
+  }
+
+  @include onDesctop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #333333;
+  margin-bottom: 32px;
+
+  @include onTablet {
+    font-size: 56px;
+    line-height: 66px;
+    margin-bottom: 56px;
+    width: 509px;
+  }
+
+  @include onDesctop {
+    margin-bottom: 68px;
+  }
+
+  &__bold {
+    font-weight: 600;
+  }
+}
+
+.card {
+  @include onTablet {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 508px;
+  }
+
+  @include onDesctop {
+    max-width: 585px;
+    position: relative;
+    padding-top: 27px;
+    margin: 0;
+  }
+}
+
+.person__info {
+  @include onDesctop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+}
+
+.photo {
+  display: flex;
+  width: 73px;
+  height: 73px;
+  margin: auto;
+  margin-bottom: 8px;
+
+  @include onTablet {
+    margin-bottom: 10px;
+  }
+
+  @include onDesctop {
+    margin: 0;
+    margin-right: 30px;
+  }
+}
+
+.name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #333333;
+  text-align: center;
+}
+
+.role {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @include onTablet {
+    margin-bottom: 16px;
+  }
+
+  @include onDesctop {
+    margin: 0;
+  }
+}
+
+.article__icon {
+  display: flex;
+  margin: auto;
+  background: url('../../icons/apostrophe.svg') center no-repeat;
+  width: 35px;
+  height: 30px;
+  margin-bottom: 24px;
+
+  @include onTablet {
+    margin-bottom: 16px;
+  }
+
+  @include onTablet {
+    position: absolute;
+    top: 40%;
+    left: -10%;
+  }
+}
+
+.comment {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @include onTablet {
+    margin-bottom: 32px;
+  }
+
+  @include onTablet {
+    text-align: unset;
+    margin-bottom: 31px;
+  }
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left__arrow {
+  background: url('../../icons/arrow__left.svg') center no-repeat;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @include onTablet {
+    position: absolute;
+    left: 0;
+    top: 60%;
+  }
+
+  @include onDesctop {
+    position: absolute;
+    left: 0;
+    top: 63%;
+  }
+}
+
+.slide__number {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4F62F6;
+
+  @include onTablet {
+    margin: auto;
+  }
+
+  @include onDesctop {
+    margin: 0;
+  }
+}
+
+.rigth__arrow {
+  background: url('../../icons/arrow__rigth.svg') center no-repeat;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @include onTablet {
+    position: absolute;
+    right: 0;
+    top: 60%;
+  }
+
+  @include onDesctop {
+    position: absolute;
+    left: 64px;
+    top: 63%;
+  }
+}
+
+.questions__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  max-width: 995px;
+
+  @include onDesctop {
+    padding-left: 102px;
+  }
+
+  &__backgrond {
+    background-color: rgba(79, 98, 246, 0.1);
+  }
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 280px;
+  border-radius: 15px;
+  border: 2px solid #4F62F6;
+  padding: 24px 16px;
+
+  @include onTablet {
+    padding: 32px 40px;
+  }
+
+  &__with__details {
+    display: block;
+  }
+
+  &__visible__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #333333;
+
+    @include onTablet {
+      font-size: 24px;
+      line-height: 28.8px;
+    }
+
+    &__details {
+      font-family: "Montserrat", sans-serif;
+      margin-top: 24px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color: #4F4F4F;
+      padding-right: 8px;
+
+      @include onTablet {
+        padding-right: 50px;
+      }
+
+      @include onTablet {
+        padding-right: 165px;
+      }
+    }
+  }
+
+  &__icon {
+    background: url('../../icons/open.svg') center no-repeat;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+}
+
+.close {
+  background: url('../../icons/close.svg') center no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}

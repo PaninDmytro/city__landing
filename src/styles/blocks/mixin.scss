@@ -1,0 +1,76 @@
+@mixin onTablet {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+
+@mixin onDesctop {
+  @media (min-width: $desctop-min-width) {
+    @content;
+  }
+}
+
+
+@mixin contentPaddingInline () {
+  padding-inline: 15px;
+
+
+  @include onTablet {
+    padding-inline: 20px;
+  }
+
+
+  @include onDesctop() {
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
+
+
+.container {
+  @include contentPaddingInline;
+}
+
+
+@mixin pageGrid {
+  --columns: 1;
+  // font-weight: 700;
+  display: grid;
+  // row-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  
+  
+  @include onTablet {
+    column-gap: 30px;
+    row-gap: 125px;
+    --columns: 2;
+    // gap: 20px 28px;
+  }
+
+
+  @include onDesctop {
+    column-gap: 132px;
+    row-gap: 134px;
+    --columns: 2;
+    // gap: 20px 16px;
+  }
+}
+
+// @mixin footerGrid {
+//   --columns: 1;
+//   font-weight: 700;
+//   display: grid;
+//   row-gap: 49px;
+//   grid-template-columns: repeat(var(--columns), 1fr);
+
+//   @include onTablet {
+//     --columns: 3;
+//     column-gap: 49px;
+//   }
+
+
+//   @include onDesctop {
+//     --columns: 3;
+//   }
+// }

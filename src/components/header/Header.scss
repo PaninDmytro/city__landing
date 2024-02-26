@@ -1,0 +1,252 @@
+@import '../../utils/variables.scss';
+@import '../../utils/reset.scss';
+@import '../../styles/blocks/mixin.scss';
+
+.navigation {
+  padding: 28px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+
+  @include onTablet {
+    justify-content: end;
+    padding-right: 40px;
+  }
+
+  @include onDesctop {
+    justify-content: space-between;
+    padding: 20px 60px 20px 120px;
+  }
+}
+
+.logo__nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 45px;
+  height: 16px;
+
+  @include onDesctop {
+    margin-right: 57px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.nav__item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.nav__link {
+  font-family: Museo Sans Cyrl;
+
+  color: #333333;
+  text-decoration: none;
+}
+
+.registration {
+  display: flex;
+  align-items: center;
+}
+
+.language__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  height: 40px;
+  border-radius: 60px;
+  padding: 10px 16px;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin-right: 24px;
+}
+
+.language {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.language__options {
+  background: url('../../icons/selector.svg') center no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.sign__in {
+  @include onTablet {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 167px;
+    height: 40px;
+    border-radius: 60px;
+    background-color: #6248FF;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 48px;
+
+    &:hover {
+      background-color: #7181FC;
+    }
+  
+    &:active {
+      background-color: #354BF4;
+    }
+  
+    &:disabled {
+      background-color: #E0E0E0;
+      color: #828282;
+    }
+  }
+}
+
+.burger__menu {
+  background: url('../../icons/burger__menu.svg') center no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.trade__info {
+  background-color: rgba(79, 98, 246, 0.1);
+  padding: 32px 20px 16px;
+
+  @include onTablet {
+    padding: 40px 40px 24px;
+  }
+
+  
+}
+
+.trade__wrapper {
+  max-width: 1440px;
+  margin: auto;
+  padding: 32px 20px 16px;
+
+  @include onTablet {
+    padding: 40px 40px 24px;
+  }
+  
+  @include onDesctop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 120px;
+  }
+}
+
+.trade__container {
+  @include onDesctop {
+    flex-grow: 1;
+  }
+}
+
+.trade {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #333333;
+  margin-bottom: 24px;
+
+  @include onTablet {
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  @include onDesctop {
+    text-align: unset;
+    max-width: 585px;
+  }
+}
+
+.offer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4F4F4F;
+  margin-bottom: 32px;
+
+  @include onTablet {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 48px;
+    width: 508px;
+  }
+
+  @include onDesctop {
+    text-align: unset;
+    margin-inline: 0;
+  }
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 54px;
+  border-radius: 60px;
+  margin: auto;
+  background-color: #4F62F6;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  color: #fff;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7181FC;
+  }
+
+  &:active {
+    background-color: #354BF4;
+  }
+
+  &:disabled {
+    background-color: #E0E0E0;
+    color: #828282;
+  }
+
+  @include onTablet {
+    width: 257px;
+  }
+
+  @include onDesctop {
+    margin: 0;
+  }
+}
+
+.diagrame {
+  display: flex;
+  width: 280px;
+  height: 300px;
+  margin: auto;
+
+  @include onTablet {
+    width: 418px;
+    height: 450px;
+  }
+
+  @include onTablet {
+    width: 482px;
+    height: 519px;
+  }
+}

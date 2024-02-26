@@ -1,0 +1,397 @@
+@import '../../utils/variables.scss';
+@import '../../utils/reset.scss';
+@import '../../styles/blocks/mixin.scss';
+
+.contact__info {
+  background-color: rgba(79, 98, 246, 0.1);
+}
+
+.contact__wrapper {
+  max-width: 1440px;
+  margin: auto;
+  padding: 48px 20px;
+
+  @include onTablet {
+    padding-inline: 130px;
+  }
+
+  @include onDesctop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px;
+  }
+}
+
+.contacts__container {
+  @include onDesctop {
+    margin-right: 132px;
+    width: 483px;
+  }
+}
+
+.contact__us {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #333333;
+  margin-bottom: 24px;
+
+  @include onTablet {
+    font-size: 56px;
+    line-height: 66px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  @include onDesctop {
+    text-align: unset;
+  }
+}
+
+.support__staff {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4F4F4F;
+  margin-bottom: 24px;
+
+  @include onTablet {
+    margin-bottom: 32px;
+  }
+
+  @include onDesctop {
+    margin-bottom: 48px;
+  }
+}
+
+.site__owner {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #4F4F4F;
+  margin-bottom: 17px;
+
+  @include onTablet {
+    margin-bottom: 24px;
+  }
+}
+
+.contact__information__container {
+  margin-bottom: 48px;
+
+  @include onDesctop {
+    margin: 0;
+  }
+}
+
+.how__contact {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.company__contact {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #4F4F4F;
+  margin-bottom: 16px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form {
+  padding: 48px 16px;
+  border: 2px solid #4F62F6;
+  border-radius: 20px;
+  background-color: #fff;
+
+  @include onTablet {
+    padding: 80px 41px;
+  }
+
+  @include onDesctop {
+    padding-inline: 80px;
+    width: 585px;
+  }
+}
+
+.input__item {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #E0E0E0;
+  padding: 7px 16px;
+  outline: none;
+
+  &::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #828282;
+  }
+
+  &:focus {
+    border: 1px solid #828282;
+
+    &::placeholder {
+      color: #4F4F4F;
+    }
+  }
+}
+
+.first__input {
+  margin-bottom: 24px;
+}
+
+.email__container {
+  margin-bottom: 24px;
+}
+
+.error {
+  color: #EB5757;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  visibility: hidden;
+  position: absolute;
+}
+
+.visible__error {
+  visibility: visible;
+}
+
+.wrong__email {
+  border-color: #EB5757;
+}
+
+.rigth__email {
+  border-color: #0EAC00;
+}
+
+.message {
+  width: 100%;
+  height: 89px;
+  border-radius: 3px;
+  border: 1px solid #E0E0E0;
+  padding: 7px 16px;
+  margin-bottom: 48px;
+
+  &::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #828282;
+  }
+
+  &:focus {
+    border: 1px solid #828282;
+
+    &::placeholder {
+      color: #4F4F4F;
+    }
+  }
+}
+
+.send {
+  display: flex;
+  margin: auto;
+  width: 172px;
+  height: 54px;
+  padding: 20px 64px;
+  background-color: #6248FF;
+  border-radius: 60px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7181FC;
+  }
+
+  &:active {
+    background-color: #354BF4;
+  }
+
+  &:disabled {
+    background-color: #E0E0E0;
+    color: #828282;
+  }
+}
+
+.details__wrapper {
+  max-width: 1440px;
+  margin: auto;
+  padding: 46px 20px 32px;
+
+  @include onTablet {
+    padding: 62px 40px 48px;
+  }
+
+  @include onDesctop {
+    padding: 32px 120px 72px;
+  }
+}
+
+.details__container {
+  @include onDesctop {
+    position: relative;
+    display: flex;
+    margin-bottom: 48px;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  margin: auto;
+  width: 45px;
+  height: 16px;
+  margin-bottom: 46px;
+
+  @include onTablet {
+    margin-bottom: 54px;
+  }
+
+  @include onDesctop {
+    margin: 0;
+    margin-right: 160px;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-bottom: 32px;
+
+  @include onTablet {
+    flex-direction: row;
+    column-gap: 47px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  @include onDesctop {
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    row-gap: 24px;
+  }
+}
+
+.option {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+
+  &__link {
+    color: #333333;
+    text-decoration: none;
+  }
+}
+
+.advice {
+  margin-bottom: 24px;
+
+  @include onTablet {
+    padding-inline: 90px;
+    margin-bottom: 32px;
+  }
+
+  @include onDesctop {
+    padding-inline: 0;
+    margin: 0;
+    max-width: 380px;
+    margin-right: 30px;
+  }
+
+  &--margin {
+    margin-bottom: 32px;
+
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+
+    @include onDesctop {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &:last-of-type {
+    margin-bottom: 32px;
+
+    @include onDesctop {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333333;
+    margin-bottom: 16px;
+
+    @include onTablet {
+      text-align: center;
+    }
+
+    @include onDesctop {
+      text-align: unset;
+    }
+  }
+
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #4F4F4F;
+  }
+}
+
+.documents {
+  @include onDesctop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.document {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 16px;
+  text-align: center;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include onDesctop {
+    margin: 0;
+  }
+
+  &__link {
+    font-family: "Montserrat", sans-serif;
+    color: #828282;
+    text-decoration: none;
+  }
+}
