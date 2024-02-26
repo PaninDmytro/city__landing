@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/city__landing/static/css/main.7b565ba3.css",
+    "main.js": "/city__landing/static/js/main.70995f58.js",
+    "static/media/MuseoSansCyrl.otf": "/city__landing/static/media/MuseoSansCyrl.49e8040ce82e8b825551.otf",
+    "static/media/close.svg": "/city__landing/static/media/close.3f36daeceaf59d6565b4.svg",
+    "static/media/open.svg": "/city__landing/static/media/open.81afb47b4f1685607256.svg",
+    "static/media/arrow__rigth.svg": "/city__landing/static/media/arrow__rigth.06aeed245722e5f6f09a.svg",
+    "static/media/selector.svg": "/city__landing/static/media/selector.a51ac4c857bd2120a3be.svg",
+    "static/media/arrow__left.svg": "/city__landing/static/media/arrow__left.18c62447e7e344dc11ea.svg",
+    "index.html": "/city__landing/index.html",
+    "static/media/apostrophe.svg": "/city__landing/static/media/apostrophe.e4cb9067095337937e06.svg",
+    "static/media/burger__menu.svg": "/city__landing/static/media/burger__menu.304b5e101fa8acced986.svg",
+    "main.7b565ba3.css.map": "/city__landing/static/css/main.7b565ba3.css.map",
+    "main.70995f58.js.map": "/city__landing/static/js/main.70995f58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b565ba3.css",
+    "static/js/main.70995f58.js"
+  ]
+}
